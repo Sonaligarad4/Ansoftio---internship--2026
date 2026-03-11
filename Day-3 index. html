@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>College Information</title>
+</head>
+
+<body>
+
+<h1>Adsul technical campus ahilyangar</h1>
+<p>Location: ahilyangar</p>
+
+<h2>Courses Offered</h2>
+<ul>
+<li>BCA</li>
+<li>BBA</li>
+<li>BSc Computer Science</li>
+<li>MCA</li>
+</ul>
+
+<h2>Useful Links</h2>
+
+<a href="https://www.google.com" target="_blank">
+Visit College Website
+</a>
+
+<br><br>
+
+<a href="#">
+Contact Us
+</a>
+
+</body>
+</html>
