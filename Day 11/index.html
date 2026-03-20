@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox Layout</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card{
+            width: 200px;
+            padding: 15px;
+            background-color: aqua;
+            text-align: center;
+
+        }
+        button{
+            background-color: #2563EB;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer
+            ;
+        }
+        button:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Flexbox Cards</h1>
+    <div class="container">
+        <div class="card">
+            <h3>card1</h3>
+            <p>Sample description</p>
+            <button>Click</button>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>Sample description</p>
+            <button>Click</button>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>Sample description</p>
+            <button>Click</button>
+        </div>
+    </div>
+    
+</body>
+</html>
