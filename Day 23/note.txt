@@ -1,0 +1,42 @@
+Project Name: Portfolio Website
+
+Sections:
+
+* Home
+* About
+* Features (Projects)
+* Contact
+
+Wireframe:
+
+* Header with logo/title
+* Navigation bar
+* Hero section
+* Projects section
+* About section
+* Contact form
+* Footer
+
+UI Design:
+Colors:
+
+* Primary: #111
+* Secondary: #4facfe
+* Accent: #00f2fe
+
+Fonts:
+
+* Poppins
+* Arial (fallback)
+
+Layout Style:
+
+* Modern and clean
+* Responsive design
+* Card-based layout
+* Smooth scrolling navigation
+
+Tools Used:
+
+* HTML, CSS, JavaScript
+* Wireframe created using (Paper / Figma / Canva)
