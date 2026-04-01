@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Quiz App</title> 
+</head> 
+<body> 
+<h2 id="question"></h2> 
+<div id="options"></div> 
+<button onclick="nextQuestion()">Next</button> 
+<h3 id="score"></h3> 
+<script> 
+let questions = [ 
+{ 
+q: "What is HTML?", 
+options: ["Hyper Text Markup Language", "High Tech", "Tool Language", 
+"None"], 
+answer: 0 
+}, 
+{ 
+q: "What is CSS?", 
+options: ["Styling Language", "Programming", "Database", "None"], 
+answer: 0 
+} 
+];
+let index = 0; 
+let score = 0; 
+function loadQuestion(){ 
+let q = questions[index]; 
+document.getElementById("question").innerHTML = q.q; 
+let optionsHTML = ""; 
+q.options.forEach((opt, i) => { 
+optionsHTML += `<p><input type="radio" name="opt" value="${i}"> 
+${opt}</p>`; 
+}); 
+document.getElementById("options").innerHTML = optionsHTML; 
+} 
+function nextQuestion(){ 
+let selected = document.querySelector('input[name="opt"]:checked'); 
+if(selected){ 
+if(parseInt(selected.value) === questions[index].answer){ 
+score++; 
+} 
+} 
+index++; 
+if(index < questions.length){ 
+loadQuestion(); 
+}else{ 
+document.body.innerHTML = "<h1>Final Score: " + score + "/" + 
+questions.length + "</h1>"; 
+} 
+} 
+loadQuestion(); 
+</script> 
+</body> 
+</html>
