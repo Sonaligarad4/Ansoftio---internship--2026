@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart To-Do Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>✅ Smart To-Do Pro</h1>
+
+    <div class="row">
+      <input id="taskInput" placeholder="Enter a new task" />
+      <button class="add-btn" onclick="addTask()">Add</button>
+    </div>
+
+    <div class="filters">
+      <button onclick="renderTasks('all')">All</button>
+      <button onclick="renderTasks('completed')">Completed</button>
+      <button onclick="renderTasks('pending')">Pending</button>
+      <button onclick="toggleDarkMode()">🌙 Dark</button>
+    </div>
+
+    <ul id="taskList"></ul>
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
